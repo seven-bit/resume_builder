@@ -13,8 +13,12 @@ class ProfilesController < ApplicationController
             redirect_to edit_url
         else
             flash[:danger] = "Profile update failed."
-            redirect_to root_url
+            redirect_to root_url 
         end
+    end
+
+    def show
+        @profile = Profile.find(params[:id])
     end
 
     def correct_user
@@ -25,9 +29,11 @@ class ProfilesController < ApplicationController
 
     private
         def profile_params
-            params.require(:profile).permit(:name, :job_title, :total_experience, :overview, 
+            params.require(:profile).permit(:name, :avatar,:job_title, :total_experience, :overview, 
                 :career_highlights, :primary_skills, :secondary_skills,
-                :educations_attributes => [ :id, :school, :degree, :description, :start, :end, :_destroy]
-            )
+                :educations_attributes => [ :id, :school, :degree, :description, :start, :end, :_destroy],
+                :experiences_attributes => [ :id, :company, :position, :description, :start, :end, :_destroy],
+                :projects_attributes => [ :id, :title, :stack, :description, :url, :_destroy]
+            ) 
         end
 end

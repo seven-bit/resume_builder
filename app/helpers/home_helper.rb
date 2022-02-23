@@ -12,3 +12,4 @@ module HomeHelper
         str.strip.split(',')
     end
 end
+ 

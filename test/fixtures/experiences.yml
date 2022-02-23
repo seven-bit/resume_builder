@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  comapny: MyString
+  position: MyString
+  description: MyText
+  start: 2022-02-23
+  end: 2022-02-23
+  profile: 
+
+two:
+  comapny: MyString
+  position: MyString
+  description: MyText
+  start: 2022-02-23
+  end: 2022-02-23
+  profile: 
