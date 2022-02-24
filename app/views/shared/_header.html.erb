@@ -4,13 +4,13 @@
             <div class="flex items-center justify-between h-16">
                 <div class="w-full justify-between flex items-center">
                     <a class="flex-shrink-0" href="/">
-                        <h1 class="text-2xl sm:text-3xl font-black"><span class="text-purple-600">My</span>Resume</h1>
+                        <h1 class="text-2xl sm:text-3xl font-black"><span class="text-red-600">My</span><span class="text-grey-50">Resume</span></h1>
                     </a>
                     <% if logged_in? %>
-                        <div class="md:block">
-                            <div class="ml-10 flex items-baseline space-x-4">
+                        <div class="md:block ">
+                            <div class="ml-10 flex items-baseline space-x-4 ">
                                 <%= render 'shared/input/buttons/primary', 
-                                    color: "purple", 
+                                    color: "red", 
                                     label: "Log out", 
                                     href: logout_path, 
                                     method: "delete" %>

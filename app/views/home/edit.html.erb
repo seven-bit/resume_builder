@@ -4,7 +4,7 @@
     <%= form_for(@profile, builder: TailwindInputBuilder) do |f| %>
         <div class="flex justify-end items-center w-full mb-4">
             <div>
-                <%= link_to "Preview", profile_path(@profile),target: "blank", class: "flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-red-600 rounded-lg shadow-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-green-200"  %>
+                <%= link_to "Preview", profile_path(@profile),target: "blank", class: "flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-red-600 rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-green-200"  %>
                 
                 <%= f.submit "Save", class: "flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" %><br/>
             </div>
