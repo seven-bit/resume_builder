@@ -16,3 +16,9 @@ rake db:seed
 
 Email: `johndoe@example.com`
 Password: `password`
+
+
+Live App:
+```
+https://secret-plains-66058.herokuapp.com/
+```
